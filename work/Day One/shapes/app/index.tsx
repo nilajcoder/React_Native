@@ -13,7 +13,9 @@ const index = () => {
       <View style={styles.greenBox}></View>
 
       {/* Purple Wide Rectangle */}
-      <View style={styles.purpleBox}></View>
+      <View style={styles.purpleBox}>
+        <Text style={styles.textInside}>Welcome Nilaj IT</Text>
+      </View>
 
       {/* Red Circle */}
       <View style={styles.redCircle}></View>
@@ -34,6 +36,15 @@ const index = () => {
 export default index
 
 const styles = StyleSheet.create({
+
+  textInside:{
+
+    textAlign: "center",
+    fontSize:20,
+    fontWeight:"bold",
+    color: 'white'
+    
+  },
 
   container: {
     flex: 1,
