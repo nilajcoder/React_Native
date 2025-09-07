@@ -40,30 +40,47 @@ const styles = StyleSheet.create({
     backgroundColor: '#d3d3d3', // gray background
     alignItems: 'center',
     paddingTop: 40,
+    borderRadius:20,
+    borderColor:'black',
+    borderWidth:5,
+    
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
     color: 'purple',
     marginBottom: 20,
+    borderRadius:5,
+    borderColor:'black',
+    borderWidth:5,
+    
   },
   redBox: {
     height: 50,
     width: 50,
     backgroundColor: 'red',
     marginVertical: 10,
+    borderRadius:5,
+    borderColor:'black',
+    borderWidth:5,
   },
   greenBox: {
     height: 60,
     width: 120,
     backgroundColor: 'lime',
     marginVertical: 10,
+      borderRadius:5,
+    borderColor:'black',
+    borderWidth:5
   },
   purpleBox: {
     height: 60,
     width: 300,
     backgroundColor: 'purple',
     marginVertical: 10,
+      borderRadius:5,
+    borderColor:'black',
+    borderWidth:5
   },
   redCircle: {
     height: 60,
@@ -71,6 +88,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
     borderRadius: 30,
     marginVertical: 10,
+    borderColor:'black',
+    borderWidth:5 ,
   },
   greenPill: {
     height: 60,
@@ -78,6 +97,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'lime',
     borderRadius: 30,
     marginVertical: 10,
+      
+    borderColor:'black',
+    borderWidth:5 //wihout this  border is not visiable
   },
   purplePill: {
     height: 60,
@@ -85,11 +107,17 @@ const styles = StyleSheet.create({
     backgroundColor: 'purple',
     borderRadius: 30,
     marginVertical: 10,
+      
+    borderColor:'black',
+    borderWidth:5
   },
   redTall: {
-    height: 120,
-    width: 80,
+    height: 55,
+    width: 60,
     backgroundColor: 'red',
     marginVertical: 10,
+      borderRadius:5,
+    borderColor:'black',
+    borderWidth:5
   },
 })
