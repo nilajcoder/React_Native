@@ -6,13 +6,13 @@ const index = () => {
       
 
        <View style={styles.container}>
-      <Text style={styles.textRedBig}>Welcome To Nilaj Company</Text>
-      <Text style={styles.textGreenBig}>Welcome To Nilaj Company</Text>
-      <Text style={styles.textPurpleBig}>Welcome To Nilaj Company</Text>
-      <Text style={styles.textRedBold}>Welcome To Nilaj Company</Text>
-      <Text style={styles.textGreenSmall}>Welcome To Nilaj Company</Text>
-      <Text style={styles.textPurpleSmall}>Welcome To Nilaj Company</Text>
-      <Text style={styles.textRedSmall}>Welcome To Nilaj Company</Text>
+      <Text style={styles.textRedBig}>Welcome To Nilaj IT Company</Text>
+      <Text style={styles.textGreenBig}>Welcome To Nilaj IT Company</Text>
+      <Text style={styles.textPurpleBig}>Welcome To Nilaj IT Company</Text>
+      <Text style={styles.textRedBold}>Welcome To Nilaj IT Company</Text>
+      <Text style={styles.textGreenSmall}>Welcome To Nilaj IT Company</Text>
+      <Text style={styles.textPurpleSmall}>Welcome To Nilaj IT Company</Text>
+      <Text style={styles.textRedSmall}>Welcome To Nilaj IT Company</Text>
     </View>
   )
 }
