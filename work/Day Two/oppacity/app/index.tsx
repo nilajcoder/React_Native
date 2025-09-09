@@ -2,10 +2,17 @@ import { StyleSheet, Text, View,Button,  TouchableOpacity  } from 'react-native'
 import React from 'react'
 import Ionicons  from '@expo/vector-icons/Ionicons'
 const index = () => {
+
+   const btnpress=()=>{
+    
+    alert("Thank You For Clicking the button")
+
+   }
+
   return (
      <View  style={styles.container}>
 
-       <Text style={styles.title}>💻 Homework Day-4 💻</Text>
+       <Text style={styles.title}>💻 Homework Day-5 💻</Text>
 
         {/* Big Sky Square */}
       <View style={styles.Box}>
@@ -22,7 +29,7 @@ const index = () => {
         </Text>
 
           {/* Opacity Button */}
-        <TouchableOpacity style={styles.button} activeOpacity={0.5}>
+        <TouchableOpacity style={styles.button} activeOpacity={0.5} onPress={btnpress}>
           <Ionicons name='download-outline' size={20} color='white'></Ionicons>
           <Text style={styles.buttonText}>Click Me</Text>
         </TouchableOpacity>
