@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,Button,  TouchableOpacity  } from 'react-native'
+import { StyleSheet, Text, View,Button,  TouchableOpacity,TextInput  } from 'react-native'
 import React from 'react'
 import Ionicons  from '@expo/vector-icons/Ionicons'
 const index = () => {
@@ -13,8 +13,11 @@ const index = () => {
      <View  style={styles.container}>
 
        <Text style={styles.title}>💻 Homework Day-5 💻</Text>
+  
+         <View style={styles.row}>
 
-        {/* Big Sky Square */}
+        
+        {/* Big Sky First  Square */}
       <View style={styles.Box}>
 
         <Text style={styles.txt}>
@@ -34,19 +37,71 @@ const index = () => {
           <Text style={styles.buttonText}>Click Me</Text>
         </TouchableOpacity>
 
-        
+          <Button title='Button' color='blue'></Button>
 
-         
+   
       </View>
 
-      
+               {/* Second Box */}
+    <View style={styles.Box2}>
+
+       {/* Title */}
+  <Text style={styles.formTitle}>Create Account</Text>
+
+  {/* Input Fields */}
+  <TextInput 
+    style={styles.input} 
+    placeholder="Email" 
+    keyboardType="email-address"
+  />
+  <TextInput 
+    style={styles.input} 
+    placeholder="Password" 
+    secureTextEntry={true}
+  />
+  <TextInput 
+    style={styles.input} 
+    placeholder="Confirm Password" 
+    secureTextEntry={true}
+  />
+
+  {/* Sign Up Button */}
+  <TouchableOpacity style={styles.signUpButton} activeOpacity={0.7}>
+    <Text style={styles.signUpText}>Sign Up</Text>
+  </TouchableOpacity>
+    
     </View>
+
+              {/* Third Box */}
+    <View style={styles.Box2}>
+      <Text style={styles.txt}>This is another box</Text>
+    </View>
+              {/* Fourth Box */}
+    <View style={styles.Box2}>
+      <Text style={styles.txt}>This is another box</Text>
+    </View>
+
+    </View>
+
+    
+
+
+     </View>
+    
   )
 }
 
 export default index
 
 const styles = StyleSheet.create({
+
+
+  row: {
+  
+  flexDirection:"row",
+  gap:15
+
+},
 
     container: {
     flex: 1,
@@ -66,6 +121,7 @@ const styles = StyleSheet.create({
     borderRadius:5,
     borderColor:'black',
     borderWidth:5,
+    alignSelf:"flex-start"
     
   },
 
@@ -77,6 +133,7 @@ const styles = StyleSheet.create({
     borderRadius:5,
     borderColor:'black',
     borderWidth:5,
+    alignSelf: 'flex-start'
   },
 
    txt: {
@@ -95,7 +152,8 @@ const styles = StyleSheet.create({
     justifyContent:"center",//centre buttton
 
     width:200,
-    alignSelf:"center" 
+    alignSelf:"center" ,
+     marginBottom: 15,  
    
 
   },
@@ -106,4 +164,46 @@ const styles = StyleSheet.create({
     textAlign:"center"
     
   },
+
+  Box2: {
+  height: 350,
+  width: 350,
+  backgroundColor: 'skyblue',
+  marginVertical: 10,
+  borderRadius: 5,
+  borderColor: 'black',   // black 👈  border
+  borderWidth: 5,
+  marginLeft:15
+},
+
+formTitle: {
+  fontSize: 22,
+  fontWeight: 'bold',
+  marginBottom: 20,
+  textAlign: 'center',
+  color: 'purple',
+},
+
+input: {
+  height: 50,
+  borderColor: 'gray',
+  borderWidth: 1,
+  borderRadius: 8,
+  paddingHorizontal: 10,
+  marginBottom: 15,
+  backgroundColor: 'white',
+},
+
+signUpButton: {
+  backgroundColor: 'purple',
+  paddingVertical: 12,
+  borderRadius: 8,
+  alignItems: 'center',
+},
+
+signUpText: {
+  color: 'white',
+  fontSize: 18,
+  fontWeight: 'bold',
+},
 })
