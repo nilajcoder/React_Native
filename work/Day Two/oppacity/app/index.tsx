@@ -1,7 +1,19 @@
 import { StyleSheet, Text, View,Button,  TouchableOpacity,TextInput  } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import Ionicons  from '@expo/vector-icons/Ionicons'
 const index = () => {
+   
+
+  {/* State setname is used for set the name in name variable*/}
+   const [name, setName] = useState('')
+     const [email, setEmail] = useState('')
+      const [phoneNumber, setPhoneNumber] = useState('')
+       const [password, setPassword] = useState('')
+
+
+  
+
+
 
    const btnpress=()=>{
     
@@ -48,23 +60,52 @@ const index = () => {
        {/* Title */}
   <Text style={styles.formTitle}>Create Account</Text>
 
-  {/* Input Fields */}
+    {/* Input Fields Names */}
+      <TextInput
+        placeholder='Enter Your name'
+        style={styles.input}
+        onChangeText={setName}
+      ></TextInput>
+
+
+  {/* Input Fields Emails */}
   <TextInput 
     style={styles.input} 
     placeholder="Email" 
-    keyboardType="email-address"
+    keyboardType="email-address" 
+    onChangeText={setEmail}
   />
+   
+        {/* Input Fields Phone */}
+          <TextInput
+        placeholder='Enter Your phone number'
+        style={styles.input}
+        keyboardType='phone-pad'
+        onChangeText={setPhoneNumber}
+      ></TextInput>
+
+
+     {/* Input Fields Passwords */}
   <TextInput 
     style={styles.input} 
     placeholder="Password" 
     secureTextEntry={true}
+    onChangeText={setPassword}
   />
+
+   {/* Input Fields Passwords  confirm*/}
   <TextInput 
     style={styles.input} 
     placeholder="Confirm Password" 
     secureTextEntry={true}
+    onChangeText={setPassword}
+
   />
 
+    <Text>{name}</Text>
+    <Text>{email}</Text>
+
+ 
   {/* Sign Up Button */}
   <TouchableOpacity style={styles.signUpButton} activeOpacity={0.7}>
     <Text style={styles.signUpText}>Sign Up</Text>
@@ -73,11 +114,11 @@ const index = () => {
     </View>
 
               {/* Third Box */}
-    <View style={styles.Box2}>
+    <View style={styles.Box3}>
       <Text style={styles.txt}>This is another box</Text>
     </View>
               {/* Fourth Box */}
-    <View style={styles.Box2}>
+    <View style={styles.Box3}>
       <Text style={styles.txt}>This is another box</Text>
     </View>
 
@@ -166,8 +207,8 @@ const styles = StyleSheet.create({
   },
 
   Box2: {
-  height: 350,
-  width: 350,
+  height: 500,
+  width: 500,
   backgroundColor: 'skyblue',
   marginVertical: 10,
   borderRadius: 5,
@@ -205,5 +246,16 @@ signUpText: {
   color: 'white',
   fontSize: 18,
   fontWeight: 'bold',
+},
+
+  Box3: {
+  height: 250,
+  width: 250,
+  backgroundColor: 'skyblue',
+  marginVertical: 10,
+  borderRadius: 5,
+  borderColor: 'black',   // black 👈  border
+  borderWidth: 5,
+  marginLeft:15
 },
 })

@@ -1,6 +1,6 @@
 
-
-## Task 4 -5
+ 
+## Task 4 -5  7
 
 Create A Editable Button Using  TouchableOpacity
 and Create Arrow Function for the button If We Click the Button alert Box will Open
@@ -43,3 +43,30 @@ then use this library to use icons
 
  marginBottom: 20, // space between text and button
 
+
+## What is Textinput in react native?
+
+In React Native, TextInput is a core component that allows the user to enter text into the app.
+It works like an input field in HTML but is built specifically for mobile apps (Android & iOS).
+
+🔹 Key Points about TextInput:
+
+It’s used for forms, search bars, logins, sign-ups, and chats.
+
+You can set a placeholder (default hint text).
+
+It can be configured for keyboard types (numeric, email, password, etc.).
+
+You can handle user input with onChangeText or by using state.
+
+Supports styles like border, padding, fontSize, color etc.
+
+🔹 Useful Props of TextInput:
+Prop	             Description
+1. placeholder	     Shows hint text when empty
+2. value           	Holds the text input value
+3. onChangeText	  Called when text changes
+4. keyboardType	   Chooses keyboard (default, numeric, email-address, etc.)
+5. secureTextEntry	 For passwords (hides text)
+6. multiline	       Allows multiple lines
+7. maxLength	       Limits number of characters
