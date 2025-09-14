@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,Button,  TouchableOpacity,TextInput  } from 'react-native'
+import { StyleSheet, Text, View,Button,  TouchableOpacity,TextInput,Modal  } from 'react-native'
 import React, { useState } from 'react'
 import Ionicons  from '@expo/vector-icons/Ionicons'
 const index = () => {
@@ -9,6 +9,10 @@ const index = () => {
      const [email, setEmail] = useState('')
       const [phoneNumber, setPhoneNumber] = useState('')
        const [password, setPassword] = useState('')
+         const [show, setShow] = useState(false);
+
+  const open = () => setShow(true);
+  const close = () => setShow(false);
 
 
   
@@ -115,12 +119,17 @@ const index = () => {
 
               {/* Third Box */}
     <View style={styles.Box3}>
-      <Text style={styles.txt}>This is another box</Text>
+      <Text style={styles.txt}>Home Work 8 </Text>
+       <Button title="🎈 Open" onPress={open} />
+
+      <Modal visible={show} animationType="slide" transparent={false}>
+        <View style={styles.modalBox}>
+          <Text style={styles.text}>হ্যালো! এটা Modal 🥳</Text>
+          <Button title="❌ Close" onPress={close} />
+        </View>
+      </Modal>
     </View>
-              {/* Fourth Box */}
-    <View style={styles.Box3}>
-      <Text style={styles.txt}>This is another box</Text>
-    </View>
+      
 
     </View>
 
@@ -249,8 +258,8 @@ signUpText: {
 },
 
   Box3: {
-  height: 250,
-  width: 250,
+  height: 300,
+  width: 300,
   backgroundColor: 'skyblue',
   marginVertical: 10,
   borderRadius: 5,
@@ -258,4 +267,14 @@ signUpText: {
   borderWidth: 5,
   marginLeft:15
 },
+
+  modalBox: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  text: {
+    fontSize: 20,
+    marginBottom: 20,
+  },
 })

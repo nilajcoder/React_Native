@@ -70,3 +70,30 @@ Prop	             Description
 5. secureTextEntry	 For passwords (hides text)
 6. multiline	       Allows multiple lines
 7. maxLength	       Limits number of characters
+
+
+## Modal
+
+In React Native, a Modal is a built-in component that:
+
+Displays content above everything else in the app (like a popup window).
+
+Temporarily blocks interaction with the rest of the app until it is closed.
+
+Is often used for alerts, forms, confirmations, or custom dialogs.
+
+Key Props of Modal:
+
+visible → true or false to show or hide the modal.
+
+transparent → if true, the modal’s background is see-through (you can see the screen behind it).
+
+animationType → controls how it appears/disappears (slide, fade, or none).
+
+💡 Example:
+
+Login popup
+
+Alert box
+
+Terms & conditions dialog
