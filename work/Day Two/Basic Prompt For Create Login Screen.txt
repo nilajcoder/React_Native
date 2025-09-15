@@ -1,0 +1,54 @@
+
+Generate a modern, professional React Native login screen using React Native CLI (not Expo).
+
+🎯 Requirements:
+
+Use a functional component with hooks.
+
+Layout:
+
+App logo (center-top, remote image from Google).
+
+Main heading: "Welcome Back 👋" (large, bold, stylish font).
+
+Subheading: "Sign in to continue" (smaller, gray text).
+
+Form inputs:
+
+Email TextInput (with validation: required + proper email format).
+
+Password TextInput with show/hide toggle icon (using react-native-vector-icons).
+
+Smooth focus animations (slight border/highlight when active).
+
+Actions:
+
+Forgot Password? text (right-aligned, tappable).
+
+Login button (rounded, gradient-like effect using backgroundColor, no gradient library).
+
+Divider with OR.
+
+Social login buttons: Google (red icon) + Facebook (blue icon).
+
+Footer:
+
+Bottom text: "Don’t have an account? Sign Up" (clickable, highlight color).
+
+Styling:
+
+Use flexbox for responsive design.
+
+Colors: White background, primary blue accent, light gray inputs.
+
+Rounded corners, shadows, padding for a clean Material UI-like feel.
+
+Use KeyboardAvoidingView to handle keyboard overlap.
+
+Code quality:
+
+Use separate StyleSheet for styles.
+
+Follow best practices (proper naming, clean code, comments).
+
+Avoid third-party gradient packages.

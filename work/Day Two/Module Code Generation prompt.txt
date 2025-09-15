@@ -1,0 +1,21 @@
+
+Generate a very simple React Native modal component using React Native CLI (not Expo).
+
+Requirements:
+1. Use functional component.
+2. Use useState for modal state (true/false).
+3. Create two functions: 
+   - open() → setShow(true)
+   - close() → setShow(false)
+4. Render:
+   - A Button titled "🎈 Open" that calls open().
+   - A Modal that shows when state is true.
+   - Inside Modal: 
+        - A Text showing "হ্যালো! এটা Modal 🥳"
+        - A Button titled "❌ Close" that calls close().
+5. Use StyleSheet for styling:
+   - container: flex=1, center both axis
+   - modalBox: flex=1, center both axis
+   - text: fontSize=20, marginBottom=20
+6. Do not use inline styling.
+7. Output the complete code with imports.

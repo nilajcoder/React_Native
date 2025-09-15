@@ -1,0 +1,23 @@
+Generate a React Native functional component using React Native CLI (not Expo).
+
+Requirements:
+
+Use useState to manage input states for:
+
+Name
+
+Email
+
+Phone Number
+
+Password (with secureTextEntry).
+
+Create four TextInput fields for these values.
+
+Add a submit Button that, when pressed, will display all entered values below the form using Text.
+
+Apply simple styling:
+
+Inputs should have border, padding, margin, and rounded corners.
+
+Container should have padding and center alignment.

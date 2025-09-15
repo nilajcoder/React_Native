@@ -1,0 +1,59 @@
+import React, { useState } from 'react'
+import { StyleSheet, Text, TextInput, View } from 'react-native'
+
+const index = () => {
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [phoneNumber, setPhoneNumber] = useState('')
+
+
+  return (
+    <View>
+      <TextInput
+        placeholder='Enter Your name'
+        style={styles.inp}
+        onChangeText={setName}
+      ></TextInput>
+
+
+      <TextInput
+        placeholder='Enter Your email'
+        style={styles.inp}
+        keyboardType='email-address'
+        onChangeText={setEmail}
+      ></TextInput>
+
+
+      <TextInput
+        placeholder='Enter Your password'
+        style={styles.inp}
+        secureTextEntry={false}
+        onChangeText={setPassword}
+      ></TextInput>
+
+
+      <TextInput
+        placeholder='Enter Your phone number'
+        style={styles.inp}
+        keyboardType="numeric"
+        onChangeText={setPhoneNumber}
+      ></TextInput>
+
+
+      <Text>{name}</Text>
+    </View>
+  )
+}
+
+export default index
+
+const styles = StyleSheet.create({
+  inp: {
+    borderColor: 'black',
+    borderWidth: 2,
+    borderRadius: 50,
+    margin: 10
+  }
+})
