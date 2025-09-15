@@ -1,4 +1,20 @@
-import { StyleSheet, Text, View,Button,  TouchableOpacity,TextInput,Modal  } from 'react-native'
+import { StyleSheet, Text, View,Button,  TouchableOpacity,TextInput,Modal,ActivityIndicator  
+ } from 'react-native'
+
+ import {
+  Bounce,
+  Chase,
+  Circle,
+  CircleFade,
+  Flow,
+  Fold,
+  Grid,
+  Plane,
+  Pulse,
+  Swing,
+  Wander,
+  Wave,
+} from 'react-native-animated-spinkit';
 import React, { useState } from 'react'
 import Ionicons  from '@expo/vector-icons/Ionicons'
 const index = () => {
@@ -125,9 +141,27 @@ const index = () => {
       <Modal visible={show} animationType="slide" transparent={false}>
         <View style={styles.modalBox}>
           <Text style={styles.text}>হ্যালো! এটা Modal 🥳</Text>
+            <Plane size={48} color="blue" />
+      <Chase size={48} color="green" />
+      <Bounce size={48} color="red" />
+      <Wave size={48} color="purple" />
+      <Pulse size={48} color="orange" />
+      <Flow size={48} color="teal" />
+      <Swing size={48} color="pink" />
+      <Circle size={48} color="black" />
+      <CircleFade size={48} color="brown" />
+      <Grid size={48} color="tomato" />
+      <Fold size={48} color="cyan" />
+      <Wander size={48} color="magenta" />
           <Button title="❌ Close" onPress={close} />
         </View>
       </Modal>
+
+      <ActivityIndicator size={25} color={'red'}></ActivityIndicator>
+        <ActivityIndicator size={25} color={'brown'}></ActivityIndicator>
+          <ActivityIndicator size={25} color={'blue'}></ActivityIndicator>
+     
+
     </View>
       
 

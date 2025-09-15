@@ -1,6 +1,6 @@
 
  
-## Task 4 -5  7
+## Task 4 -5  7 8
 
 Create A Editable Button Using  TouchableOpacity
 and Create Arrow Function for the button If We Click the Button alert Box will Open
@@ -97,3 +97,182 @@ Login popup
 Alert box
 
 Terms & conditions dialog
+
+
+npm install react-native-animated-spinkit
+
+
+## ActivityIndicator
+
+📌 ActivityIndicator is a loading spinner component.
+It is used to show that some work is happening in the background (like fetching data, submitting a form, or waiting for an API response).
+
+import React from 'react';
+import { Text, View } from 'react-native';
+
+import {
+  Bounce,
+  Chase,
+  Circle,
+  CircleFade,
+  Flow,
+  Fold,
+  Grid,
+  Plane,
+  Pulse,
+  Swing,
+  Wander,
+  Wave,
+} from 'react-native-animated-spinkit';
+
+export default function App() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ marginBottom: 20, fontSize: 24 }}>Loading...</Text>
+
+      {/* Example Spinners */}
+      <Plane size={48} color="blue" />
+      <Chase size={48} color="green" />
+      <Bounce size={48} color="red" />
+      <Wave size={48} color="purple" />
+      <Pulse size={48} color="orange" />
+      <Flow size={48} color="teal" />
+      <Swing size={48} color="pink" />
+      <Circle size={48} color="black" />
+      <CircleFade size={48} color="brown" />
+      <Grid size={48} color="tomato" />
+      <Fold size={48} color="cyan" />
+      <Wander size={48} color="magenta" />
+    </View>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+======================================================================================
+======================================================================================
+
+
+
+
+
+
+
+
+
+
+
+npm i lottie-react-native
+
+
+
+
+
+
+import LottieView from 'lottie-react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+
+const LoadingAnimation = () => {
+  return (
+    <View style={styles.container}>
+      <LottieView
+        source={require('../assets/Animation.json')}
+        autoPlay
+        loop
+        style={{ height:300, width:'300' }}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+
+export default LoadingAnimation;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+======================================================================================
+======================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+npm i react-native-animated-loader
+
+
+
+
+
+import React, { useEffect, useState } from 'react';
+import { StyleSheet, Text } from 'react-native';
+import AnimatedLoader from 'react-native-animated-loader';
+export default function App() {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    setInterval(() => {
+      setVisible(!visible);
+    }, 2000);
+  }, []);
+
+  return (
+    <AnimatedLoader
+      visible={visible}
+      overlayColor="rgba(255,255,255,0.75)"
+      animationStyle={styles.lottie}
+      speed={1}>
+      <Text>Doing something...</Text>
+    </AnimatedLoader>
+  );
+}
+const styles = StyleSheet.create({
+  lottie: {
+    width: 100,
+    height: 100,
+  },
+});
